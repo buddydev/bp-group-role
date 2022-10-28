@@ -164,7 +164,7 @@ class BP_Group_Role_Handler {
 		$associated_role = groups_get_groupmeta( $group_id, '_bp_group_associated_role', true );
 
 		if ( $associated_role && $this->is_valid_role( $associated_role ) ) {
-			$user->add_role( $associated_role );
+			$user->set_role( $associated_role );
 		}
 	}
 
